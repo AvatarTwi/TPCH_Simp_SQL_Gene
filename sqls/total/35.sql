@@ -1,1 +1,1 @@
-EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM orders  JOIN customer  ON o_custkey = c_custkey  WHERE  o_comment LIKE '%special%' 
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM orders  JOIN customer  ON o_custkey = c_custkey  WHERE  o_orderdate = '1995-12-01' 

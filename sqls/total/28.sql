@@ -1,1 +1,1 @@
-EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM nation  JOIN supplier  ON n_nationkey = s_nationkey  WHERE  n_name = 'GERMANY'  ORDER BY s_nationkey 
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM nation  JOIN supplier  ON n_nationkey = s_nationkey  WHERE  n_name IN ('IRAN','IRAN')  ORDER BY s_nationkey 

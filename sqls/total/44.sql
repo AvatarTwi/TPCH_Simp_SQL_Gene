@@ -1,1 +1,1 @@
-EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM lineitem  JOIN part  ON l_partkey = p_partkey  WHERE  l_discount IN ('0.2','0.2') 
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM lineitem  JOIN part  ON l_partkey = p_partkey  WHERE  l_shipdate <= date '1998-12-01' - interval '118' day 
