@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON) SELECT * FROM supplier join customer on c_nationkey = s_nationkey ;

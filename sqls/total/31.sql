@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM lineitem  JOIN orders  ON l_orderkey = o_orderkey  WHERE  l_discount IN ('0.2','0.2')  ORDER BY o_orderkey 

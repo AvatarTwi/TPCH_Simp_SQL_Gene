@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON) SELECT * FROM region join nation on n_regionkey = r_regionkey order by r_regionkey ;

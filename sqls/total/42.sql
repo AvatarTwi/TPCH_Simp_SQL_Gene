@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM lineitem  JOIN orders  ON l_orderkey = o_orderkey  WHERE  l_discount BETWEEN 0.2 AND 0.2 

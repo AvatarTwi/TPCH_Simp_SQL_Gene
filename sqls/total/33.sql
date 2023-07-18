@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM lineitem  JOIN part  ON l_partkey = p_partkey  WHERE  l_receiptdate IN ('1994-01-01','1994-01-01')  ORDER BY p_partkey 

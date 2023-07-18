@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM orders  JOIN customer  ON o_custkey = c_custkey  WHERE  o_orderdate <= date '1998-12-01' - interval '70' day  ORDER BY c_custkey 

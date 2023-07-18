@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM orders  JOIN customer  ON o_custkey = c_custkey  WHERE  o_orderdate = '1994-5-01' 

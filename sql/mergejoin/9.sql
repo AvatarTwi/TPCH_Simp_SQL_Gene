@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON) SELECT * FROM supplier join partsupp on ps_suppkey = s_suppkey order by ps_suppkey ;

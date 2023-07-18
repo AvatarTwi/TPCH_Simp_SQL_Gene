@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM orders  WHERE  o_orderdate <= date '1998-12-01' - interval '104' day  ORDER BY o_orderkey 

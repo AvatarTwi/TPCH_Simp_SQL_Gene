@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT COUNT(*)  FROM orders  WHERE  o_orderdate <= date '1998-12-01' - interval '119' day  GROUP BY o_orderkey 

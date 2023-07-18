@@ -1,0 +1,1 @@
+EXPLAIN (ANALYZE,VERBOSE,COSTS,BUFFERS,TIMING,SUMMARY,FORMAT JSON)  SELECT *  FROM customer  JOIN orders  ON c_custkey = o_custkey  WHERE  c_mktsegment = 'AUTOMOBILE' 
